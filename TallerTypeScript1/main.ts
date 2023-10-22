@@ -10,7 +10,7 @@ function mostrarDatosSerie(allseries: series[]): void {
   
   allseries.forEach((serie) => {
     let tbodyAprendiz = document.createElement("tr");
-    tbodyAprendiz.innerHTML = `<tr><td>${serie.id}</td> <td>${serie.name}</td> <td>${serie.channel}</td> <td>${serie.seasons}</td> </tr>`;
+    tbodyAprendiz.innerHTML = `<tr><td>${serie.id}</td> <td><a href="${serie.name}" target=${serie.link}>${serie.name}</a></td> <td>${serie.channel}</td> <td>${serie.seasons}</td> </tr>`;
     seriesTable.appendChild(tbodyAprendiz);
   }) ;
 
